@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Group 4 - Lists & Semantic Structure</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header{
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav ul{
+            padding: 0;
+            list-style: none;
+            background: #34495e;
+            text-align: center;
+            margin: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav ul li a:hover{
+            background: #2c3e50;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        section, article{
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1)
+            flex: 2;
+            margin-right: 20px;
+        }
+        aside{
+            background: #eec995;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            flex: 1;
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
+            color: white;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Semantic Header Element -->
+     <header>
+        <h1>Welcome to my  Personal Webpage</h1>
+        <p>Group 4 Assignment: Semantic HTML & Lists </p>
+    </header>
+
+    <!-- Semantic Nav Element-->
+    <nav>
+        <ul>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#foods">Favourite Foods</a></li>
+            <li><a href="#terms">Technical Terms</a></li>  
+        </ul>
+    </nav>
+    
+    <!-- Semantic Main Element -->
+    <main>
+        <!-- Semantic Section Element -->
+        <section id="hobbies">
+            <h2>My Hobbies(Unordered list)</h2>
+            <p>Here are a few activities I enjoy doing in my free time:</p>
+            <!-- Unordered list -->
+            <ul>
+                <li>Coding and building mini websites</li>
+                <li>Playing guitar and listening to music</li>
+                <li>Hiking and exploring nature trails</li>
+                <li>Reading science fiction novels</li>  
+            </ul>
+        </section> 
+
+        <!-- Semantic Article Element -->
+         <article id="foods">
+            <h2>My Favourite Foods (Ordered list)</h2>
+            <p>My top favourite dishes ranked in order of preference:</p>
+            <!-- Ordered List -->
+            <ol>
+                <li>Wood-fired Margherita Pizza</li>
+                <li>Creamy Garlic Butter Pasta</li>
+                <li>Grilled salmon with Asparagus</li>
+                <li>Classic Chocolate Brownie with Ice Cream</li>
+            </ol>
+        </article>
+
+        <!-- Semantic Aside Element -->
+        <aside id="terms">
+            <h2>Technical Terms (Definition List)</h2>
+            <p>Key web development definitions:</p>
+            <!-- Definition List -->
+            <dl>
+                <dt><strong>HTML</strong></dt>
+                <dd>HyperText Markup Language - the standard language for creating web pages.</dd>
+                
+                <dt><strong>Semantic Elements</strong></dt>
+                <dd>Tags that clearly describe their meaning to both browser and developer (e.g., &lt;header&gt;, &lt;article&gt;).</dd>
+
+                <dt><strong>CSS</strong></dt>
+                <dd>Cascading Style Sheets - used to style and layout web pages.</dd>
+            </dl>
+        </aside>
+    </main>
+
+    <!-- Semantic Footer Element -->
+    <footer>
+        <p>&copy; 2026 Group 4 Web Design Assignment. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+    
